@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pavnit Sethi — Software Engineer</title>
+  <meta name="description" content="Pavnit Sethi — Software Engineer (Generative AI) in San Francisco. Building scalable backends, full-stack apps, and AI-powered products used by thousands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%23c56a3a'/%3E%3Cg stroke='%23231206' stroke-width='3' fill='none' opacity='.85'%3E%3Cpath d='M50 3v94M3 50h94M15 17c21 17 21 49 0 66M85 17c-21 17-21 49 0 66'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- scroll progress -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ===== Subtle scroll-driven ball + rim ===== -->
+  <div class="court" aria-hidden="true">
+    <div class="rim" id="rim">
+      <svg viewBox="0 0 200 150" width="100%" height="100%">
+        <!-- backboard hint -->
+        <line x1="100" y1="0" x2="100" y2="30" class="pole" />
+        <!-- rim -->
+        <ellipse cx="100" cy="46" rx="46" ry="11" class="ring" />
+        <!-- net -->
+        <g class="net" id="net">
+          <path d="M60 50 L72 104" /><path d="M75 52 L83 108" />
+          <path d="M90 53 L94 110" /><path d="M100 53 L100 111" />
+          <path d="M110 53 L106 110" /><path d="M125 52 L117 108" />
+          <path d="M140 50 L128 104" />
+          <path d="M68 74 L132 74" opacity=".55" />
+          <path d="M76 92 L124 92" opacity=".4" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="ball" id="ball">
+      <svg viewBox="0 0 100 100" width="100%" height="100%">
+        <defs>
+          <radialGradient id="leather" cx="36%" cy="32%" r="80%">
+            <stop offset="0%" stop-color="#7c5b45" />
+            <stop offset="52%" stop-color="#5a3d2c" />
+            <stop offset="100%" stop-color="#2c1d14" />
+          </radialGradient>
+        </defs>
+        <circle cx="50" cy="50" r="48" fill="url(#leather)" />
+        <g stroke="#1c110a" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".45">
+          <path d="M50 2v96" /><path d="M2 50h96" />
+          <path d="M14 16c22 18 22 50 0 68" /><path d="M86 16c-22 18-22 50 0 68" />
+        </g>
+        <ellipse cx="35" cy="29" rx="13" ry="9" fill="#fff" opacity=".08" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <a href="#top" class="brand">Pavnit Sethi</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#beyond">Beyond</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="dot"></span> Available for interesting problems</p>
+        <h1 class="hero-title">Software engineer building<br />fast, reliable products.</h1>
+        <p class="hero-sub">
+          I'm Pavnit — I design and ship scalable backends, full-stack apps, and
+          AI-powered products used by thousands. Currently a Software Engineer on a
+          Generative&nbsp;AI team at Robert&nbsp;Half&nbsp;·&nbsp;Protiviti, and pursuing an
+          M.S. in Computer Science at Georgia&nbsp;Tech.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <p class="hero-meta">
+          <span>San Francisco</span><i></i><span>7,000+ users served</span><i></i><span>3.94 GPA · Cum Laude</span>
+        </p>
+      </div>
+      <div class="scroll-cue"><span>Scroll</span></div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="work">
+      <div class="section-head">
+        <span class="label">01 — Experience</span>
+        <h2>Where I've shipped</h2>
+      </div>
+      <div class="xp">
+        <article class="xp-item">
+          <div class="xp-side">
+            <span class="xp-when">2024 — Now</span>
+            <span class="xp-org">Robert Half · Protiviti</span>
+            <span class="xp-loc">San Francisco, CA</span>
+          </div>
+          <div class="xp-main">
+            <h3>Software Engineer II → I, Generative AI</h3>
+            <ul>
+              <li>Architected an enterprise platform used by <em>7,000+ consultants</em>, with a distributed orchestration layer that dynamically routes requests — cutting average task time by <em>80%</em>.</li>
+              <li>Shipped a <em>GPT-4o</em> app that generates client-ready presentations from natural language, combining document retrieval, web search, and external APIs to save up to <em>16 hours</em> per engagement.</li>
+              <li>Improved performance ~<em>50%</em> by parallelizing service calls, optimizing workflows, and instrumenting end-to-end pipeline metrics.</li>
+              <li>Built full-stack features across <em>React</em> and <em>.NET</em>, shipping production functionality with cross-functional teams.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="xp-item">
+          <div class="xp-side">
+            <span class="xp-when">2023</span>
+            <span class="xp-org">Protiviti</span>
+            <span class="xp-loc">San Ramon, CA</span>
+          </div>
+          <div class="xp-main">
+            <h3>Data Engineer Intern</h3>
+            <ul>
+              <li>Built an end-to-end <em>ETL pipeline</em> from Azure Cosmos DB into structured GPT-3 prompts, automating profile generation for <em>500+ consultants</em>.</li>
+              <li>Wrote Python automation to clean, normalize, and aggregate data — cutting manual prep by ~<em>60%</em>.</li>
+              <li>Integrated SQL &amp; NoSQL sources into scalable workflows for reliable downstream AI retrieval.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="xp-item">
+          <div class="xp-side">
+            <span class="xp-when">2022</span>
+            <span class="xp-org">Robert Half</span>
+            <span class="xp-loc">San Ramon, CA</span>
+          </div>
+          <div class="xp-main">
+            <h3>AWS Cloud Intern</h3>
+            <ul>
+              <li>Built a Python automation tool with a 3-person team to start/stop <em>35+ AWS environments</em>, cutting operational overhead.</li>
+              <li>Created a self-service web interface with <em>Flask, AJAX, and JavaScript</em>.</li>
+              <li>Automated infrastructure with <em>EC2, S3, Auto Scaling, and CloudFormation</em>.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <span class="label">02 — Toolkit</span>
+        <h2>Things I build with</h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul class="tags"><li>C#</li><li>Python</li><li>TypeScript</li><li>SQL</li><li>C / C++</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks</h4>
+          <ul class="tags"><li>.NET</li><li>React</li><li>Node.js</li><li>Angular</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud &amp; data</h4>
+          <ul class="tags"><li>Azure</li><li>AWS</li><li>Cosmos DB</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>Engineering</h4>
+          <ul class="tags"><li>REST APIs</li><li>CI/CD</li><li>Git</li><li>OpenAPI</li><li>Azure Functions</li><li>Agile</li></ul>
+        </div>
+        <div class="skill-group">
+          <h4>AI &amp; ML</h4>
+          <ul class="tags"><li>OpenAI API</li><li>Semantic Kernel</li><li>LangChain</li><li>RAG</li><li>Vector Search</li><li>Function Calling</li><li>LLM Orchestration</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <span class="label">03 — Selected work</span>
+        <h2>Projects &amp; experiments</h2>
+      </div>
+      <div class="projects">
+        <a class="proj" href="https://github.com/pavsethi/projects/tree/main/Multi-Threaded_Server" target="_blank" rel="noopener">
+          <div class="proj-top"><span class="proj-kind">Systems · C</span><span class="proj-year">2024</span></div>
+          <h3>Multi-Threaded HTTP Server</h3>
+          <p>
+            A concurrent HTTP server handling simultaneous GET/PUT requests through a
+            thread-safe queue. Implemented reader-writer locking with mutexes and a linked
+            list to prevent race conditions and guarantee file-level synchronization — plus
+            bounded buffers, regex request parsing, and robust status-code handling.
+          </p>
+          <ul class="tags"><li>C</li><li>POSIX Threads</li><li>Mutexes</li><li>Reader-Writer Locks</li></ul>
+          <span class="proj-link">View on GitHub <i>↗</i></span>
+        </a>
+        <a class="proj" href="https://github.com/pavsethi/projects/tree/main/TaskManagerApp" target="_blank" rel="noopener">
+          <div class="proj-top"><span class="proj-kind">Full-stack · Python</span><span class="proj-year">Web app</span></div>
+          <h3>Task Manager</h3>
+          <p>
+            A web-based task manager built with py4web. Create, organize, and track tasks
+            through a clean browser interface — backed by a modular app structure with
+            built-in authentication and a local development server.
+          </p>
+          <ul class="tags"><li>Python</li><li>py4web</li><li>Full-stack</li><li>Auth</li></ul>
+          <span class="proj-link">View on GitHub <i>↗</i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Beyond work ===== -->
+    <section class="section" id="beyond">
+      <div class="section-head">
+        <span class="label">04 — Beyond work</span>
+        <h2>Away from the keyboard</h2>
+      </div>
+      <div class="beyond">
+        <article class="card"><h4>Basketball</h4><p>Golden State Warriors fan, and I'll defend Kyrie Irving as the smoothest handle in the league to anyone who'll listen. Pickup whenever I can get a run.</p></article>
+        <article class="card"><h4>The gym</h4><p>Lifting is my reset button — consistent reps, the same steady-progress mindset I bring to writing clean, reliable code.</p></article>
+        <article class="card"><h4>Food</h4><p>Chasing every viral spot from TikTok and Instagram with friends. If it's trending and within driving distance, we're booking the table.</p></article>
+        <article class="card"><h4>Escape rooms</h4><p>Sixty minutes, a locked room, and a lot of bad theories. Solving puzzles under pressure is basically debugging with a countdown.</p></article>
+        <article class="card"><h4>Podcasts</h4><p>Mornings start with Morning Brew Daily, with the occasional Reddit-stories rabbit hole for good measure.</p></article>
+        <article class="card"><h4>Learning</h4><p>Currently deep in an M.S. at Georgia Tech — AI, HCI, and algorithms — while working full-time. Always chasing the next thing to understand.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <span class="label">05 — Contact</span>
+      <h2 class="contact-title">Let's build something.</h2>
+      <p class="contact-sub">Open to interesting problems, good food recommendations, and the occasional pickup game.</p>
+      <div class="contact-links">
+        <a href="mailto:pavnit123@gmail.com">pavnit123@gmail.com</a>
+        <a href="https://www.linkedin.com/in/pavnit-sethi-62382b194" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="tel:+19259635567">925 963 5567</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Pavnit Sethi</span>
+    <span>San Francisco</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
